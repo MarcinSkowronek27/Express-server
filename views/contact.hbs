@@ -1,4 +1,14 @@
 <h2>Contact me</h2>
+<div class="isSent">
+  {{#if isSent}}
+  The message has been sent!
+  {{/if}}
+</div>
+<div class="isError">
+  {{#if isError}}
+  You can\'t leave fields empty!
+  {{/if}}
+</div>
 <form action="/contact/send-message" method="POST">
   <label>
     Your name: <input type="text" name="author">
@@ -9,7 +19,7 @@
   <label>
     Title: <input type="text" name="title">
   </label>
-   <label>
+  <label>
     Message: <textarea name="message"></textarea>
   </label>
   <button type="submit">Send message</button>
