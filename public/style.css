@@ -8,10 +8,6 @@ h1 {
   color: white;
 }
 
-.dark h1 {
-  display: none;
-}
-
 .dark nav a{
   color: white;
 }
