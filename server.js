@@ -59,7 +59,7 @@ app.post('/contact/send-message', upload.single('file'), function (req, res) {
   else {
     res.render('contact', { isError: true });
   }
-  console.log(req.file);
+  // console.log(req.file);
 });
 
 app.use(express.static(path.join(__dirname, '/public')));
